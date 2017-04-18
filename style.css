@@ -16,6 +16,9 @@ html,body
 *:not(html) {
     -webkit-transform: translate3d(0, 0, 0);
 }
+img{
+    -webkit-transform: translate3d(0, 0, 0);
+}
 a:link .font-white, a:visited .font-white{
 	text-decoration: none;
   color: white;
