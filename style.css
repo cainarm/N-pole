@@ -13,6 +13,14 @@ html,body
   color:white;
 }
 
+.container-fluid div, .container-fluid div img, accelerate {  
+    transform: translateZ(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+}
 
 a:link .font-white, a:visited .font-white{
 	text-decoration: none;
@@ -212,7 +220,7 @@ a:active {
   .onlyDesktop{
     display:none;
   }
-
+  
   .noMarginTop{
     margin-top:-10px;
   }
