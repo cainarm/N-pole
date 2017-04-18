@@ -13,7 +13,10 @@ html,body
   color:white;
 }
 
-
+.forceLoad{
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); 
+}
 
 a:link .font-white, a:visited .font-white{
 	text-decoration: none;
