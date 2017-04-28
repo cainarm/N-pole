@@ -1,5 +1,5 @@
 
-html, a,h1,h4,h3, p{
+html, a,h1,h2,h4,h3, p{
   font-family: 'Quicksand', sans-serif;
 }
 html,body
@@ -87,6 +87,7 @@ a:active {
     font-weight: bold;
     padding:10px;
     padding-right:20px;
+    padding-left:20px;
     display:inline-block;
 }
 .navbar-inner-button:first-child{
@@ -108,7 +109,7 @@ a:active {
   font-weight: bold;
   font-size:27px;
   margin-top:20px;
-  margin-left:60px;
+  margin-left:55px;
 }
 .header-right-corner a, .header-right-corner i{
   color:white;
@@ -120,7 +121,19 @@ a:active {
   height:600px;
   position:absolute;
   z-index:-200;
-  
+  background-size: contain;
+}
+#bg-mobile{
+  width:110%;
+  height:700px;
+  position:absolute;
+  z-index:-200;
+  background: url(img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: contain;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden; 
 }
 
 #gif-pizza{
@@ -205,7 +218,7 @@ a:active {
     display:none;
   }
   #firstSector{
-    margin-top: -150px;
+    margin-top: -100px;
   }
   .noMarginTop{
     margin-top:-10px;
@@ -216,11 +229,13 @@ a:active {
 
 }
 
-@media (max-width: 769px) {
+@media (max-width: 765px) {
   .onlyDesktop{
     display:none;
   }
-  
+  #firstSector{
+    margin-top: -190px;
+  }
   .noMarginTop{
     margin-top:-10px;
   }
@@ -230,6 +245,25 @@ a:active {
 
 }
 
+@media (min-width: 900px) and (max-width: 1100px) {
+  .header-right-corner {
+    display: none;
+  }  
+
+}
+@media (min-width: 1400px){
+  #firstSector{
+    margin-top:100px;
+  }
+
+}
+
+@media (min-width: 1600px){
+  #firstSector{
+    margin-top:200px;
+  }
+
+}
 
 @media (min-width:992px) {
   .onlyMobile{
@@ -295,9 +329,17 @@ a:active {
 .slider-element{
   margin:10px;
   background-color: white;
-  height:400px;
+  min-height:400px;
+  height:auto;
 }
 
+.slider-modal .slider-element{
+  
+  margin:10px;
+  background-color: white;
+  height:500px;
+
+}
 .slick-prev:before, .slick-next:before { font-family: FontAwesome; font-size: 40px; line-height: 1; color: white; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }   
 
 .slick-prev:before { content: "\f053"; }
@@ -373,4 +415,9 @@ a:active {
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
+}
+.modal-body{
+  background-color:#087f23;
+      max-height: 800px;
+
 }

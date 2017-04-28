@@ -76,7 +76,7 @@
                             <div class="col-md-3">
                                 <div class="header-right-corner">
                                     <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                                    <a href="">(51)3664-2657</a>
+                                    <a href="">(51) 3664-2657</a>
                                 </div> 
                             </div>
                         </div>
@@ -96,13 +96,15 @@
 
             <div class="onlyDesktop top" style="overflow:hidden;" >
                 <div>
-                    <img src="img/output.gif" class="img-responsive" id="background-gif">
+                    <video autoplay loop poster="" style="object-fit: cover" id="background-gif" muted>
+                        <source src="img/bg.mp4">
+                    </video>
                 </div>
                 <div class="container-fluid">
                     <div class="row">        
                         <div class="col-md-3">
                             <div style="margin-top:250px; right:-10px">
-                                    <div class="label-swiper animated zoomIn" style="right:-30px">
+                                    <div class="label-swiper animated zoomIn" style="right:-30px;">
                                         <span><h2 class="bigTitle"> Quer experimentar a melhor pizza de Torres ?</h2></span>
                                     </div>
                             </div>
@@ -120,16 +122,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
             <div class="onlyMobile top accelerate">  
                 <div style="position:relative">
                     <div >
                         <div class="row accelerate">
-                            <div class="col-md-3 accelerate">
-                                <img src="img/output.gif" class="img-responsive accelerate" id="background-gif">
+                            <div class="col-md-3 accelerate" id="bg-mobile">
+                                <!-- <img src="img/bg.jpg" class=" accelerate" id="background-gif"> -->
+                            </div>
+
                             </div>
                             <div class="col-md-3" style="padding:50px">
-                                    <div class="label-swiper" style="margin-top:140px">
+                                    <div class="label-swiper" style="margin-top:140px;  padding-left:36px">
                                         <span><h2 class="bigTitle"> Quer experimentar a melhor pizza de Torres ?</h2></span>
                                     </div>
                             </div>
@@ -143,7 +147,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid"  style="margin-top:230px; margin-bottom:50px">   
+
+            <div class="container-fluid"  style="margin-top:270px; margin-bottom:50px; position:relative">   
                 <div class="row " id="firstSector">
                     <div class="col-md-4 col-sm-4 ">
                         <div class="block z-depth-1 text-center" id="block1">
@@ -221,16 +226,16 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 z-depth-1" style="margin:0;padding:0">
+                    <div class="col-sm-3 z-depth-1" style="margin:0;padding:0">
                         <img src="img/ambiente1.jpg" class="img-responsive">
                     </div>
-                    <div class="col-md-3 z-depth-1" style="margin:0;padding:0">
+                    <div class="col-sm-3 z-depth-1" style="margin:0;padding:0">
                         <img src="img/ambiente2.jpg" class="img-responsive">
                     </div>
-                    <div class="col-md-3 z-depth-1" style="margin:0;padding:0">
+                    <div class="col-sm-3 z-depth-1" style="margin:0;padding:0">
                         <img src="img/ambiente3.jpg" class="img-responsive">
                     </div>  
-                    <div class="col-md-3 z-depth-1" style="margin:0;padding:0">
+                    <div class="col-sm-3 z-depth-1" style="margin:0;padding:0">
                         <img src="img/ambiente4.jpg" class="img-responsive">
                     </div>      
                 </div>   
@@ -245,36 +250,33 @@
                 </div>
                 <div class="row noMarginTop" style="background-color: #087f23; padding:30px">
                     <div class="col-md-12 text-center">
-                        <h2><a data-toggle="modal" data-target="#menuModal" class="font-white">A La Carte</a></h2>
-                        <h2><a data-toggle="modal" data-target="#menuModal" class="font-white">Sabores de Pizza Salgada</a></h2>
-                        <h2><a data-toggle="modal" data-target="#menuModal" class="font-white">Sabores de Pizza Doce</a></h2>
-                        <h2><a data-toggle="modal" data-target="#menuModal" class="font-white">Bebidas </a></h2>
-                        <h2><a data-toggle="modal" data-target="#menuModal" class="font-white">Espumantes </a></h2>
+                        <h2><a data-toggle="modal" data-target="#pizzaSalgada" class="font-white">Sabores de Pizza Salgada</a></h2>
+                        <h2><a data-toggle="modal" data-target="#pizzaDoce" class="font-white">Sabores de Pizza Doce</a></h2>
+                        <h2><a data-toggle="modal" data-target="#aLaCarte" class="font-white">Aperitivos</a></h2>
                     </div>
                 </div>
             </div>
             
 
-            <div class="container-fluid " id="location">
+            <div class="container-fluid " id="location" style="margin:0; padding:0">
                 <div class="row">
                     <div class="col-md-12 text-center" style="margin:0; padding:0; height:auto; background-color: #087f23">
                         <h1 style="color:white">Localização</h1>
                     </div>
                 </div>
                 <div class="row noMarginTop">
-                    <div class="col-md-12" style="margin:0; padding:0">
+                    <div class="col-md-12" style="margin:0; padding-left:10px; padding-right:14px">
                         <div id="map" style="width: 100%; height: 300px"></div>
                     </div>
                 </div>
                 <div class="row noMarginTop">
                     <div class="col-md-12 z-depth-1" style="margin:0; padding:0; height:auto; background-color: #087f23">
-                        <h4 style="color:white;padding-left:10px; font-weight: bold">Endereço: Rua Benjamin Constant, 163, Torres, RS</h4>
+                        <h4 style="color:white;padding-left:20px; font-weight: bold">Endereço: Rua Benjamin Constant, 163, Torres, RS</h4>
                     </div>
                 </div>
             </div>
 
-
-            <div class="container-fluid" id="contact" style="margin-top:40px">
+            <div class="container-fluid " id="location" style="margin-top:10px">
                 <div class="row">
                     <div class="col-md-12 text-center" style="margin:0; padding:0; height:auto; background-color: #087f23">
                         <h1 style="color:white">Contato</h1>
@@ -283,80 +285,187 @@
                 <div class="row" id="contactSecondRow">
                     <div class="col-md-12" style="margin:0; padding:0; height:auto; background-color: #087f23">
                         <div class="col-md-6 text-center">
-                            <h3 class="font-white bold">
+                            <h2 class="font-white bold" style="padding-top:10px">
                                 <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
                                 (51)3664-2657
-                            </h3>
+                            </h2>
                         </div>
                         <div class="col-md-6 text-center">
-                            <h3 class="font-white bold">
-                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                                <a style="color:white" href="http://facebook.com/pizzaria.napole">facebook.com/pizzaria.napole</a>
-                            </h3>
+                            <div class="col-md-2">
+                                <h1 class="font-white bold">
+                                    <a style="color:white" href="http://facebook.com/pizzaria.napole"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </h1>
+                            </div>
+                            <div class="col-md-2">
+                                <h1 class="font-white bold">
+                                    <a style="color:white" href="http://facebook.com/pizzaria.napole"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </h1>
+                            </div>
+                            <div class="col-md-2">
+                                <h1 class="font-white bold">
+                                    <a style="color:white" href="http://facebook.com/pizzaria.napole"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </h1>
+                            </div>
+
 
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: #087f23">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="color:white" aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel" style="color: white; font-weight: bold">Sabores de Pizza Salgada</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-6">
-                                <h3>Pizza 4 Queijos <br><small>Mussarela, provolone, catupiry e parmesão</small></h3>
-                        </div>
-                        <div class="col-xs-3 col-xs-offset-2">
-                            <h3>R$ 0.00</h3>
-                        </div>
-                        <span class="divider"></span>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-6">
-                                <h3>Pizza Jardineira <br><small>Tomate, pimentão, cebola e ervilha</small></h3>
-                        </div>
-                        <div class="col-xs-3 col-xs-offset-2">
-                            <h3>R$ 0.00</h3>
-                        </div>
-                        <span class="divider"></span>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-6">
-                                <h3>Pizza Mafiosa <br><small>Calabresa moída, cebola e pimenta</small></h3>
-                        </div>
-                        <div class="col-xs-3 col-xs-offset-2">
-                            <h3>R$ 0.00</h3>
-                        </div>
-                        <span class="divider"></span>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-6">
-                                <h3>Pizza Moda da Casa<br><small>Presunto, coração, palmito e azeitona preta</small></h3>
-                        </div>
-                        <div class="col-xs-3 col-xs-offset-2">
-                            <h3>R$ 0.00</h3>
-                        </div>
-                        <span class="divider"></span>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-6">
-                                <h3>Pizza Nápole<br><small>Calabresa, champignon, presunto e azeitona</small></h3>
-                        </div>
-                        <div class="col-xs-3 col-xs-offset-2">
-                            <h3>R$ 0.00</h3>
-                        </div>
-                        <span class="divider"></span>
-                    </div>
+            <div style="margin:0; padding:0; height:auto; background-color: #087f23; height:11px; margin-top:-11px">
 
+            </div>
+        
+        <div class="modal fade" id="aLaCarte" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #087f23">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="color:white" aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel" style="color: white; font-weight: bold">A La Carte</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="slider-modal">
+                            <div class="slider-element">
+                                <img src="img/calzone.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Calzone</h1>
+                                    <h2><small>Recheios diversos</small></h2>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slider-element">
+                                <img src="img/fritas.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Fritas</h1>
+                                </div>
+                                
+                            </div>
+                            <div class="slider-element">
+                                <img src="img/frango-grelhado.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Frango Grelhado</h1>
+                                    <h2><small>Frango, fritas e salada</small></h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="slider-element">
+                                <img src="img/talharim.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Talharim</h1>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="pizzaSalgada" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #087f23">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="color:white" aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel" style="color: white; font-weight: bold">Sabores de Pizza Salgada</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="slider-modal">
+                            <div class="slider-element">
+                                <img src="img/4queijos.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Quatro Queijos</h1>
+                                    <h2><small>Mussarela, provolone, catupiry e parmesão</small></h2>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slider-element">
+                                <img src="img/coração.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Pizza de Coração</h1>
+                                     <h2><small>Coração</small></h2>
+                                </div>
+                                
+                            </div>
+                            <div class="slider-element">
+                                <img src="img/bolonhesa.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Pizza Bolonhesa</h1>
+                                    <h2><small>Carne moída e tomate</small></h2>
+                                </div>
+                            </div>
+                            <div class="slider-element">
+                                <img src="img/brasileira.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Pizza Brasileira</h1>
+                                    <h2><small>Calabresa moída, ovos, cebola e azeitona</small></h2>
+                                </div>
+                            </div>
+                            <div class="slider-element">
+                                <img src="img/camarão.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Pizza de Camarão</h1>
+                                    <h2><small>Camarão</small></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="modal fade" id="pizzaDoce" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #087f23">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="color:white" aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel" style="color: white; font-weight: bold">Sabores de Pizza Doce</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="slider-modal">
+                            <div class="slider-element">
+                                <img src="img/abacaxi.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Pizza de Abacaxi</h1>
+                                    <h2><small>Abacaxi</small></h2>
+                                </div>
+                                
+                            </div>
+                            <div class="slider-element">
+                                <img src="img/chocolate-mms.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Pizza de Chocolate preto com MMs</h1>
+                                    <h2><small>Chocolate preto e mm`s</small></h2>
+
+                                </div>
+                                
+                            </div>
+                            <div class="slider-element">
+                                <img src="img/chocolate-branco-morango.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Pizza de Chocolate Branco com Morango</h1>
+                                    <h2><small>Leite condensado, chocolate branco e morango</small></h2>
+                                </div>
+                            </div>
+                            <div class="slider-element">
+                                <img src="img/california.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Pizza Califórnia</h1>
+                                    <h2><small>Figo, pêssego e abacaxi</small></h2>
+                                </div>
+                            </div>
+                            <div class="slider-element">
+                                <img src="img/charge.jpg" class="img-responsive" >
+                                <div class="col-md-12 text-center">
+                                    <h1>Pizza de Charge</h1>
+                                    <h2><small>Amendoim, chocolate preto e doce de leite</small></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
         <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -389,9 +498,9 @@
 
         <script>
             $('document').ready(function(){
-                $('.slider-produtos').slick({
+                var config = {
                     centerMode: true,
-                    centerPadding: '10px',
+                    centerPadding: '5px',
                     slidesToShow:3,
                     responsive: [
                         {
@@ -413,14 +522,48 @@
                         }
                         }
                     ]
+                };
+
+                $('.slider-produtos').slick(config);
+                $('.slider-modal').slick({
+                    centerMode: true,
+                    centerPadding: '5px',
+                    slidesToShow:1,
+                    responsive: [
+                        {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '10px',
+                            slidesToShow: 3
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: true,
+                            centerMode: true,
+                            centerPadding: '10px',
+                            slidesToShow: 1
+                        }
+                        }
+                    ]
                 });
+                $('.modal').on('shown.bs.modal', function() {
+                    $('.slider-produtos').slick("setPosition", 0);
+                    $('.slider-modal').slick("setPosition", 0);
+                }); 
             });
+
+
         </script>
         <script>
             function initMap(){
                 var mapOptions = {
                         center: new google.maps.LatLng(-29.338799, -49.728208),
-                        zoom: 17
+                        zoom: 18,
+                        scrollwheel: false
                 }
 
                 var marker = new google.maps.Marker({
@@ -429,8 +572,9 @@
                 });
 
                 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
+                
                 marker.setMap(map);
+
             }
         </script>
         <script>
