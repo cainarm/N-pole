@@ -139,7 +139,7 @@ a:active {
 #gif-pizza{
     position: absolute;
     top:-10;
-    right: -420px;
+    right: -480px;
     height:400px;
 }
 
@@ -420,4 +420,12 @@ a:active {
   background-color:#087f23;
       max-height: 800px;
 
+}
+
+.circle-icon{
+    padding: 20px 23px;
+    display: inline-block;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
 }
