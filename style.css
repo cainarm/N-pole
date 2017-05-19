@@ -2,6 +2,7 @@
 html, a,h1,h2,h4,h3, p{
   font-family: 'Quicksand', sans-serif;
 }
+
 html,body
 {
     width: 100%;
@@ -123,6 +124,7 @@ a:active {
   z-index:-200;
   background-size: contain;
 }
+
 #bg-mobile{
   width:110%;
   height:700px;
@@ -138,9 +140,9 @@ a:active {
 
 #gif-pizza{
     position: absolute;
-    top:-10;
-    right: -480px;
-    height:400px;
+    top:34;
+    right: -340px;
+    height:350px;
 }
 
 .z-depth-1{
